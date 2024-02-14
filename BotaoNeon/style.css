@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #00ebc4;
+    color: #00ebc4;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    box-shadow: 0 0 15px #00ebc4, inset 0 0 15px #00ebc4;
+    text-shadow: 0 0 15px #00ebc4;
+}

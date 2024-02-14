@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinâmica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            border: 0;
+        }
+
+        @media screen and (min-width: 1600px) and (max-width: 1920px) {
+            img {
+                height: 85vh;
+            }
+        }
+
+        @media screen and (min-width: 3840px) and (max-width: 7680px) {
+            img {
+                height: 65vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <picture>
+        <source media="(max-width: 3840px)" srcset="./images/img-4k.jpg" type="image/jpeg">
+        <source media="(max-width: 1920px)" srcset="./images/img-g.jpg" type="image/jpeg">
+        <source media="(max-width: 640px)" srcset="./images/img-p.jpg" type="image/jpeg">
+        <img src="./images/img-m.jpg" alt="Imagem dinâmica">
+    </picture>
+</body>
+</html>
